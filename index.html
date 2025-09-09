@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name — Brand / Product Designer</title>
+    <meta name="description" content="Portfolio of Your Name — branding, product design, and web." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Swap fonts to your taste -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="container nav" aria-label="Primary">
+            <a href="#home" class="brand">
+                <span class="dot" aria-hidden="true"></span>
+                <span class="brand-text">Your Name</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+                <span class="sr-only">Toggle menu</span> ☰
+            </button>
+
+            <div id="navMenu" class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#approach">Approach</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a class="btn" href="#contact">Start a project</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section id="home" class="section hero">
+            <div class="container hero-inner">
+                <p class="availability" aria-live="polite">Available for inquiries · Q4</p>
+                <h1 class="display spaced" data-reveal>
+                    H a l l o !
+                </h1>
+                <p class="lede" data-reveal data-reveal-delay="60">
+                    Brand & product designer helping businesses unlock their value with distinctive, timeless design.
+                </p>
+                <div class="hero-actions" data-reveal data-reveal-delay="120">
+                    <a class="btn" href="#projects">See work</a>
+                    <a class="btn btn-ghost" href="#contact">Start a project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <header class="section-head">
+                    <h2 class="h2">Selected projects</h2>
+                    <a class="underlink" href="#contact">View all / request case studies</a>
+                </header>
+
+                <div class="project-grid">
+                    <!-- Project card -->
+                    <article class="project-card" data-reveal>
+                        <a href="#" class="project-link" aria-label="Open case study">
+                            <figure class="thumb" style="--bg:url('assets/project-1.jpg')">
+                                <img src="assets/project-1.jpg" alt="" loading="lazy" />
+                            </figure>
+                            <div class="overlay">
+                                <h3 class="h3">StackPay</h3>
+                                <p class="muted">Fintech · Brand system · Web</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="project-card" data-reveal data-reveal-delay="60">
+                        <a href="#" class="project-link">
+                            <figure class="thumb" style="--bg:url('assets/project-2.jpg')">
+                                <img src="assets/project-2.jpg" alt="" loading="lazy" />
+                            </figure>
+                            <div class="overlay">
+                                <h3 class="h3">Zeno</h3>
+                                <p class="muted">Legal AI · Identity</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="project-card" data-reveal data-reveal-delay="120">
+                        <a href="#" class="project-link">
+                            <figure class="thumb" style="--bg:url('assets/project-3.jpg')">
+                                <img src="assets/project-3.jpg" alt="" loading="lazy" />
+                            </figure>
+                            <div class="overlay">
+                                <h3 class="h3">Genji Kyoto</h3>
+                                <p class="muted">Hospitality · Web redesign</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="project-card" data-reveal data-reveal-delay="180">
+                        <a href="#" class="project-link">
+                            <figure class="thumb" style="--bg:url('assets/project-4.jpg')">
+                                <img src="assets/project-4.jpg" alt="" loading="lazy" />
+                            </figure>
+                            <div class="overlay">
+                                <h3 class="h3">Verta Digital</h3>
+                                <p class="muted">Automation · Branding</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section about">
+            <div class="container about-grid">
+                <div class="about-copy">
+                    <h2 class="h2" data-reveal>Nice to meet you</h2>
+                    <p data-reveal data-reveal-delay="60">
+                        I’m <strong>Your Name</strong>, a designer focused on brand identity, product, and web.
+                        I help teams stand out with clear strategy and confident visuals.
+                    </p>
+                    <ul class="tags" data-reveal data-reveal-delay="120" aria-label="Services">
+                        <li>Strategy</li>
+                        <li>Brand Identity</li>
+                        <li>Logo</li>
+                        <li>Typography</li>
+                        <li>Web/UI</li>
+                        <li>Motion</li>
+                        <li>No-code (Framer)</li>
+                    </ul>
+
+                    <ul class="social" data-reveal data-reveal-delay="180">
+                        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    </ul>
+                </div>
+
+                <figure class="about-media" data-reveal>
+                    <img src="assets/portrait.jpg" alt="Portrait of Your Name" loading="lazy" />
+                </figure>
+            </div>
+        </section>
+
+        <!-- Approach -->
+        <section id="approach" class="section approach">
+            <div class="container">
+                <header class="section-head">
+                    <h2 class="h2">Approach</h2>
+                    <p class="muted">A simple, collaborative process.</p>
+                </header>
+
+                <ol class="steps">
+                    <li data-reveal>
+                        <h3 class="h3">Discovery & Strategy</h3>
+                        <p>Quick call → research → positioning & goals.</p>
+                    </li>
+                    <li data-reveal data-reveal-delay="60">
+                        <h3 class="h3">Design</h3>
+                        <p>Identity, key assets, and web flows come together.</p>
+                    </li>
+                    <li data-reveal data-reveal-delay="120">
+                        <h3 class="h3">Feedback</h3>
+                        <p>Iterate with you to refine details and direction.</p>
+                    </li>
+                    <li data-reveal data-reveal-delay="180">
+                        <h3 class="h3">Launch & Support</h3>
+                        <p>Files, guidelines, and ongoing support post-launch.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section contact">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <h2 class="display spaced" data-reveal>Let’s create something unforgettable</h2>
+                    <p class="muted" data-reveal data-reveal-delay="60">
+                        Prefer a call? <a class="underlink" href="#">Book here</a>.
+                    </p>
+                    <ul class="contact-list" data-reveal data-reveal-delay="120">
+                        <li>hi@yourname.com</li>
+                        <li>+234 000 000 0000</li>
+                    </ul>
+                </div>
+
+                <!-- AFTER -->
+                <form class="card form" onsubmit="handleContactSubmit(event)" aria-label="Contact form">
+
+                    <label>
+                        <span>Name</span>
+                        <input type="text" name="name" autocomplete="name" required />
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" autocomplete="email" required />
+                    </label>
+                    <label>
+                        <span>Message</span>
+                        <textarea name="message" rows="5" required></textarea>
+                    </label>
+                    <button class="btn" type="submit">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="brand brand-footer" href="#home"><span class="dot" aria-hidden="true"></span> <span
+                        class="brand-text">Your Name</span></a>
+                <p class="muted">© <span id="year"></span> Your Name. All rights reserved.</p>
+            </div>
+            <ul class="foot-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#approach">Approach</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true">
+        <div class="toast-content">
+            <span id="toastMessage">Thanks! I’ll reply shortly.</span>
+            <button class="toast-close" aria-label="Close notification">&times;</button>
+        </div>
+    </div>
+
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
