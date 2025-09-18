@@ -43,45 +43,46 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 // ----- Contact form -> show toast instead of alert -----
-function handleContactSubmit(e){
-  e.preventDefault();
-  // TODO: send your form with fetch/Formspree/etc. here if needed
+function handleContactSubmit(e) {
+    e.preventDefault();
+    // TODO: send your form with fetch/Formspree/etc. here if needed
 
-  showToast("Thanks! I’ll reply shortly.");
+    showToast("Thanks! I’ll reply shortly.");
 }
 
 // Toast helpers
 let toastTimer;
-function showToast(message, duration = 4000){
-  const toast = document.getElementById('toast');
-  const msg = document.getElementById('toastMessage');
-  const closeBtn = toast.querySelector('.toast-close');
+function showToast(message, duration = 4000) {
+    const toast = document.getElementById('toast');
+    const msg = document.getElementById('toastMessage');
+    const closeBtn = toast.querySelector('.toast-close');
 
-  if (!toast || !msg) return;
 
-  msg.textContent = message;
+    if (!toast || !msg) return;
 
-  // Clear any existing timers and show
-  clearTimeout(toastTimer);
-  toast.classList.add('show');
+    msg.textContent = message;
 
-  // Auto-hide
-  toastTimer = setTimeout(hideToast, duration);
+    // Clear any existing timers and show
+    clearTimeout(toastTimer);
+    toast.classList.add('show');
 
-  // Close button & ESC support
-  closeBtn.onclick = hideToast;
-  document.addEventListener('keydown', escToCloseToast);
+    // Auto-hide
+    toastTimer = setTimeout(hideToast, duration);
+
+    // Close button & ESC support
+    closeBtn.onclick = hideToast;
+    document.addEventListener('keydown', escToCloseToast);
 }
 
-function hideToast(){
-  const toast = document.getElementById('toast');
-  if (!toast) return;
-  toast.classList.remove('show');
-  document.removeEventListener('keydown', escToCloseToast);
+function hideToast() {
+    const toast = document.getElementById('toast');
+    if (!toast) return;
+    toast.classList.remove('show');
+    document.removeEventListener('keydown', escToCloseToast);
 }
 
-function escToCloseToast(e){
-  if (e.key === 'Escape') hideToast();
+function escToCloseToast(e) {
+    if (e.key === 'Escape') hideToast();
 }
 
 

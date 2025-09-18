@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- add viewport-fit=cover to remove notch inset gaps on iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Uzochukwu Iwogbe | Portfolio</title>
     <meta name="description" content="Portfolio of Your Name — branding, product design, and web." />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Swap fonts to your taste -->
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
@@ -46,11 +46,47 @@
         <section id="home" class="section hero">
             <div class="container hero-inner">
                 <p class="availability" aria-live="polite">Available for inquiries · Q4</p>
+
+                <section id="about" class="section about">
+                    <div class="container about-grid">
+                        <div class="about-copy">
+                            <h2 class="h2" data-reveal>Nice to meet you</h2>
+                            <p data-reveal data-reveal-delay="60">
+                                I’m <strong>Uzochukwu Iwogbe</strong>, a frontend developer focused on brand identity,
+                                product, and web.
+                                I help teams stand out with clear strategy and confident visuals.
+                            </p>
+                            <ul class="tags" data-reveal data-reveal-delay="120" aria-label="Services">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li>Web/UI</li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+
+                            <ul class="social" data-reveal data-reveal-delay="180">
+                                <li><a href="https://x.com/xsxarr__" aria-label="Twitter" target="_blank">Twitter</a>
+                                </li>
+                                <li><a href="https://github.com/scarr-eth/" aria-label="GitHub"
+                                        target="_blank">Github</a></li>
+                                <li><a href="#" aria-label="Instagram" target="_blank">Instagram</a></li>
+                            </ul>
+                        </div>
+
+                        <figure class="about-media" data-reveal>
+                            <img src="pfp.png" alt="Portrait of Your Name" loading="lazy" />
+                        </figure>
+                    </div>
+                </section>
+
                 <h1 class="display spaced" data-reveal>
                     H e l l o !
                 </h1>
                 <p class="lede" data-reveal data-reveal-delay="60">
-                    Brand & product designer helping businesses unlock their value with distinctive, timeless design.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi exercitationem consequatur dolorem
+                    reiciendis dolores alias autem facere perferendis suscipit nesciunt. Ea, voluptate nihil dolorum
+                    voluptas consequuntur commodi est tempora ipsam!
                 </p>
                 <div class="hero-actions" data-reveal data-reveal-delay="120">
                     <a class="btn" href="#projects">See work</a>
@@ -121,36 +157,7 @@
         </section>
 
         <!-- About -->
-        <section id="about" class="section about">
-            <div class="container about-grid">
-                <div class="about-copy">
-                    <h2 class="h2" data-reveal>Nice to meet you</h2>
-                    <p data-reveal data-reveal-delay="60">
-                        I’m <strong>Uzochukwu Iwogbe</strong>, a frontend developer focused on brand identity, product, and web.
-                        I help teams stand out with clear strategy and confident visuals.
-                    </p>
-                    <ul class="tags" data-reveal data-reveal-delay="120" aria-label="Services">
-                        <li>Strategy</li>
-                        <li>Brand Identity</li>
-                        <li>Logo</li>
-                        <li>Typography</li>
-                        <li>Web/UI</li>
-                        <li>Motion</li>
-                        <li>No-code (Framer)</li>
-                    </ul>
 
-                    <ul class="social" data-reveal data-reveal-delay="180">
-                        <li><a href="https://x.com/xsxarr__" aria-label="Twitter" target="_blank">Twitter</a></li>
-                        <li><a href="https://github.com/scarr-eth/" aria-label="GitHub" target="_blank">Github</a></li>
-                        <li><a href="#" aria-label="Instagram" target="_blank">Instagram</a></li>
-                    </ul>
-                </div>
-
-                <figure class="about-media" data-reveal>
-                    <img src="pfp.png" alt="Portrait of Your Name" loading="lazy" />
-                </figure>
-            </div>
-        </section>
 
         <!-- Approach -->
         <section id="approach" class="section approach">
@@ -231,7 +238,7 @@
             </ul>
         </div>
     </footer>
-    
+
     <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true">
         <div class="toast-content">
             <span id="toastMessage">Thanks! I’ll reply shortly.</span>
