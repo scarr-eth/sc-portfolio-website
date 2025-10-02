@@ -97,6 +97,10 @@ p {
     padding: 5rem 0;
 }
 
+.section-contact {
+    padding: 3rem 0 5rem;
+}
+
 .muted {
     color: var(--muted);
 }
@@ -604,3 +608,29 @@ p {
     outline: 2px solid var(--accent);
 }
 
+
+
+/* Prevent the big heading from overflowing on small screens */
+.contact .display {
+  font-size: clamp(1.8rem, 9vw, 3rem); /* scale down on phones */
+  line-height: 1.1;
+  /* allow mid-word wrapping across browsers */
+  overflow-wrap: anywhere;   /* modern */
+  word-break: break-word;    /* Safari/WebKit */
+  hyphens: auto;
+}
+
+/* The extra-wide spaced style can be too much on mobile */
+@media (max-width: 480px){
+  .contact .display.spaced { letter-spacing: .08em; } /* was .22em */
+}
+
+/* Just in case the icon row grows wide, let it wrap cleanly */
+.social { flex-wrap: wrap; }
+
+/* Make sure the text column can actually shrink inside flex/grid */
+.contact-copy { min-width: 0; }
+```
+
+No HTML changes needed.
+This lets the heading break inside long words, reduces the mobile letter-spacing, and ensures the icon row wraps—so the section fits perfectly on narrow screens.
